@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -35,45 +39,150 @@ body {
   flex-direction: column;
   row-gap: 2rem;
   color: white;
+
+  .logo {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: transparent;
+    background: -webkit-linear-gradient(#33a8db, #1472b7);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #31a8dd;
+
+    background: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(#3ba1cd, #1572b7);
+    border-image-slice: 10;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background: #1572b7;
+      color: white;
+    }
+  }
 }
 
-.banner-content .logo {
-  width: 15rem;
-  height: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  margin: auto;
-}
+/* Main */
 
-.banner-content h1 {
+h2 {
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 2.5rem;
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #1472b7);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.banner-content button {
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.15rem;
   color: #31a8dd;
+  text-align: center;
+  line-height: 2rem;
+}
 
-  background: transparent;
-  border: 1px solid;
-  border-image: linear-gradient(#3ba1cd, #1572b7);
-  border-image-slice: 10;
-  transition: 0.3s;
+#course-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 3rem 1rem 4rem 1rem;
+  border-bottom: 1px solid #33a8db80;
+  color: white;
 
-  &:hover {
-    cursor: pointer;
-    background: #1572b7;
+  p {
+    text-align: center;
+  }
+}
+
+#course-content .modules-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+
+  .module {
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 1px solid #33a8db;
+    border-radius: 100px;
+    background-color: #252525;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  .module span {
+    color: #31a8dd;
+  }
+}
+
+#transform-world {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  height: 30rem;
+  border-bottom: 1px solid #33a8db80;
+
+  background: url(/assets/images/woman-code.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  p {
+    text-transform: lowercase;
     color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 3px 2px #33a8db;
+  }
+}
+
+#professional-challenges {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  padding: 3rem 2rem 5rem 2rem;
+  border-bottom: 1px solid #33a8db80;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-image: linear-gradient(
+    rgba(50, 168, 219, 0),
+    rgba(50, 168, 219, 0.2)
+  );
+
+  p {
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  p a {
+    text-decoration: none;
+    color: #33a8db;
+    font-weight: 600;
   }
 }
