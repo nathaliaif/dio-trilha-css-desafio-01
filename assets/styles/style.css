@@ -80,7 +80,7 @@ body {
 
     &:hover {
       cursor: pointer;
-      background: #1572b7;
+      background: #2b91bd;
       color: white;
     }
   }
@@ -225,7 +225,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
-        background: trasparent;
+        background: transparent;
         transition: 0.2s;
         transform: scale(0.9);
         opacity: 0;
@@ -235,7 +235,7 @@ footer {
       &:hover::before {
         background: #31a8dd;
         transform: scale(1);
-        box-shadow: 0 0 20px #31a8dd;
+        box-shadow: 0 0 20px #2b91bd;
         opacity: 1;
       }
     }
