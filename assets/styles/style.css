@@ -159,6 +159,7 @@ h2 {
   align-items: center;
   padding: 3rem 2rem 5rem 2rem;
   border-bottom: 1px solid #33a8db80;
+  overflow-x: hidden;
 
   p {
     color: white;
